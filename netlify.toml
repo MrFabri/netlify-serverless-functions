@@ -1,0 +1,29 @@
+[build]
+ functions="functions"
+ publish="dist"
+
+# Redirects the serverless function to /api
+[[redirects]]
+ from="/api/*"
+ to="/.netlify/functions/server/:splat"
+ status=200
+ force=true
+
+# Custom 404 page
+# Comment this if you are using a SPA to render a 404 component!
+[[redirects]]
+ from="/*"
+ to="/404"
+ status=404
+ force=false
+
+# The following redirect is intended for use with most SPAs e.g Angular React
+# that handle routing internally.
+# [[redirects]]
+#  from="/*"
+#  to="/index.html"
+#  status=200
+
+[functions]
+ node_bundler = "esbuild"
+ included_files = ["src/**"]
