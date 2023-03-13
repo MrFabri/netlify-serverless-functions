@@ -20,3 +20,5 @@ If you want to run your backend only without netlify functions
 1. Fork this repository
 3. Install dependencies `npm install`
 4. Run `npm start` and see the magic happen!
+
+![image](https://user-images.githubusercontent.com/32011023/224772960-72a949c5-21a4-42d9-892b-42eba91d75bf.png)
