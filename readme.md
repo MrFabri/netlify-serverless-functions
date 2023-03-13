@@ -1,6 +1,8 @@
 # Serverless functions and static site
+<a href="https://serverless-functions-express.netlify.app/">Demo website</a>
 
-The static site is served from the dist folder, you can refer to it as the frontend because all the files in there will be available on the web!
+The static website is served from the dist folder, you can refer to it as the frontend because all the files in there will be available on the web! 
+If you are using a framework put your compiled files in this directory!
 
 The backend "express rest api" is in the src folder! The backend is imported into the function called "server" and therefore served as a serverless function.
 
@@ -12,3 +14,9 @@ Run this to publish your site to netlify
 
 If you want to run your backend only without netlify functions
 `npm run express:start`
+
+## Guide
+
+1. Fork this repository
+3. Install dependencies `npm install`
+4. Run `npm start` and see the magic happen!
